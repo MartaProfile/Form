@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marta Rios Garrido">
+    <meta name="description" content="Formulario">
+    <title>Formulario de inscripción</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form id="form" action="index.html">
+        <fieldset>
+
+            <legend>Formulario de Inscripción</legend>
+
+            <div class="control-formulario">
+                <label for="username">Nombre de Usuario: </label>
+                <input autofocus type="text" id="username" placeholder="Escribe tu nombre de Usuario">
+                <small class="error"></small>
+            </div>
+
+            <div>
+                <label for="email">Correo Electrónico: </label>
+                <input type="text" id="email" placeholder="Email">
+                <small class="error"></small>
+            </div>
+        
+            <div class="control-formulario">
+                <label for="age">Edad: </label>
+                <input type="number" id="age" placeholder="Edad">
+                <small class="error"></small>
+            </div>
+
+            <div class="control-formulario">
+                <label for="password">Contraseña: </label>
+                <input type="password" id="password" placeholder="Introduce tu contraseña">
+                <small class="error"></small>
+            </div>
+
+            <div class="control-formulario">
+                <label for="confirmPassword">Confirmar Contraseña: </label>
+                <input type="password" id="confirmPassword" placeholder="Confirma tu contraseña">
+                <small class="error"></small>
+            </div>
+
+            <button type="submit">ENVIAR</button>
+            <p id="error-message" class="error"></p>
+
+        </fieldset>
+    </form>
+</body>
